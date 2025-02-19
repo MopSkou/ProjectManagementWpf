@@ -1,0 +1,39 @@
+﻿<Page x:Class="ProjectManagementWpf.Pages.Add.AddProjectPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjectManagementWpf.Pages.Add"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="400"
+      Title="AddProjectPage" Background="LightSkyBlue">
+
+    <Grid>
+        <StackPanel Margin="10" Orientation="Vertical"
+            VerticalAlignment="Center" Height="390" Width="300">
+            <Label Content="Название проекта" FontSize="12" Foreground="Black" FontWeight="Bold"/>
+            <TextBox Name="ProjectNameTextBox" Width="300" Height="20"/>
+
+            <Label Content="ID заказчика (CustomerCompanyID)" FontSize="12" Foreground="Black" FontWeight="Bold"/>
+            <TextBox Name="CustomerCompanyIDTextBox" Width="300" Height="20"/>
+
+            <Label Content="ID подрядчика (ContractorCompanyID)" FontSize="12" Foreground="Black" FontWeight="Bold"/>
+            <TextBox Name="ContractorCompanyIDTextBox" Width="300" Height="20"/>
+
+            <Label Content="Дата начала"  FontSize="12" Foreground="Black" FontWeight="Bold"/>
+            <DatePicker Name="StartDatePicker" Width="150" HorizontalAlignment="Left"/>
+
+            <Label Content="Дата окончания" FontSize="12" Foreground="Black" FontWeight="Bold"/>
+            <DatePicker Name="EndDatePicker" Width="150" HorizontalAlignment="Left"/>
+
+            <Label Content="Приоритет" FontSize="12" Foreground="Black" FontWeight="Bold"/>
+            <TextBox Name="PriorityTextBox" Width="300" Height="20"/>
+
+            <Label Content="ID менеджера проекта (ProjectManagerID)" FontSize="12" Foreground="Black" FontWeight="Bold"/>
+            <TextBox Name="ProjectManagerIDTextBox" Width="300" Height="20"/>
+
+            <Button Content="Сохранить" Click="SaveButton_Click" Margin="0,10,0,0" Background="WhiteSmoke" Foreground="Black" FontWeight="Bold" FontSize="15" Width="100"/>
+            <Button Content="Назад" Click="BackButton_Click" Margin="0,10,0,0" Background="WhiteSmoke" Foreground="Black" FontWeight="Bold" FontSize="15" Width="100"/>
+        </StackPanel>
+    </Grid>
+</Page>
